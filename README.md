@@ -8,15 +8,15 @@ Usage
 
 To run it:
 
-```docker run -d -P pierre-jean/simplevault```
+```docker run -d -P animus/simplevault```
 
 It is recommanded to mount a volume to be able to reuse the password database (the text file `simplevault.txt`) for later use:
 
-```docker run -d -P -v /var/lib/simplevault/ pierre-jean/simplevault```
+```docker run -d -P -v /var/lib/simplevault/ animus/simplevault```
 
 If you want to bind the volume with an existing password database file on your host,use
 
-```docker run -d -P -v /path/to/simplevault/host/directory:/var/lib/simplevault/```
+```docker run -d -P -v /path/to/simplevault/host/directory:/var/lib/simplevault/ animus/simplevault```
 
 In that case, the simplevault file present in /path/to/simplevault/host/directory must be readable and writable by the process.
 
