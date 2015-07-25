@@ -9,9 +9,9 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive && apt-get install -y \
 	wget 
 
 # Get Simplevault and deploy it
-RUN rm /var/www/* \
+RUN rm /var/www/html/* \
 	&& wget -O /var/www/simplevault-1.8.tgz "http://downloads.sourceforge.net/project/simplevault/simplevault/simplevault-1.8.tgz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fsimplevault%2Ffiles%2F&ts=1402174081&use_mirror=garr" \
-	&& tar -xf /var/www/simplevault-1.8.tgz -C /var/www/ --strip-components 1 \
+	&& tar -xf /var/www/simplevault-1.8.tgz -C /var/www/html/ --strip-components 1 \
 	&& rm /var/www/simplevault-1.8.tgz
 
 # Add simplevault textfile (user login and passwords)
