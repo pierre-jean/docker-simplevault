@@ -1,4 +1,4 @@
-Docker-simplevault
+Simplevault
 ==================
 
 Docker image for [the password manager Simplevault](http://simplevault.sourceforge.net/).
